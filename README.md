@@ -81,6 +81,10 @@ run:
 
 If you have any questions we're in #docker-machine on Freenode.
 
+## Creating New Drivers
+
+There are many drivers and templates in the /drivers directory that provide a good model for a new driver.  Once you have created your driver, you will need to include it `commands.go` file under 'github.com/docker/machine/drivers' in order for docker-machine to call the Init function that registers the new driver.
+
 ## Unit Tests
 
 To run the unit tests for the whole project, using the following script:
